@@ -1,0 +1,57 @@
+{
+    "_id": "57ffce008069be6bd948dd31",
+    "index": 0,
+    "guid": "a46ee330-46b8-404b-9ef5-78c68b5e7fd1",
+    "isActive": false,
+    "balance": "$3,095.75",
+    "picture": "unknown.png",
+    "age": 24,
+    "eyeColor": "green",
+    "name": {
+      "first": "Day",
+      "last": "Gross"
+    },
+    "company": "ZORK",
+    "email": "day.gross@zork.ca",
+    "phone": "+1 (925) 453-2809",
+    "address": "430 Ocean Court, Kaka, Connecticut, 5522",
+    "about": "Occaecat fugiat ea et aliquip esse et id incididunt adipisicing tempor. Duis quis sunt ut minim sit magna. Incididunt aliqua est id exercitation nulla deserunt.",
+    "registered": "Thursday, January 1, 2015 7:42 AM",
+    "latitude": "4.637351",
+    "longitude": "-88.257087",
+    "tags": [
+      "pariatur",
+      "labore",
+      "nostrud",
+      "ex",
+      "sit"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Inez Atkins"
+      },
+      {
+        "id": 1,
+        "name": "Dixon Lang"
+      },
+      {
+        "id": 2,
+        "name": "Carpenter Landry"
+      }
+    ],
+    "greeting": "Hello, Day! You have 7 unread messages.",
+    "favoriteFruit": "apple"
+  }

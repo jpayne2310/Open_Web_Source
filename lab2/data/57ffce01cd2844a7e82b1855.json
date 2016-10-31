@@ -1,0 +1,57 @@
+{
+    "_id": "57ffce01cd2844a7e82b1855",
+    "index": 4,
+    "guid": "375ffd67-f613-4ec2-aa96-e5e3746ac507",
+    "isActive": true,
+    "balance": "$1,887.88",
+    "picture": "unknown.png",
+    "age": 27,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Todd",
+      "last": "Mack"
+    },
+    "company": "ZYTRAX",
+    "email": "todd.mack@zytrax.info",
+    "phone": "+1 (864) 511-3016",
+    "address": "341 Freeman Street, Benson, American Samoa, 4098",
+    "about": "Nisi qui qui eiusmod eiusmod Lorem. Adipisicing consectetur excepteur pariatur irure consectetur dolor ipsum pariatur voluptate magna occaecat ut ullamco. Id ea ut pariatur dolore dolor.",
+    "registered": "Saturday, May 17, 2014 7:18 AM",
+    "latitude": "6.93477",
+    "longitude": "-76.037736",
+    "tags": [
+      "sunt",
+      "fugiat",
+      "aliquip",
+      "sint",
+      "enim"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Tonia Torres"
+      },
+      {
+        "id": 1,
+        "name": "Kimberly Hahn"
+      },
+      {
+        "id": 2,
+        "name": "Latoya Jacobs"
+      }
+    ],
+    "greeting": "Hello, Todd! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  }

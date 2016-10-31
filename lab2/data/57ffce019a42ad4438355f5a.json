@@ -1,0 +1,57 @@
+{
+    "_id": "57ffce019a42ad4438355f5a",
+    "index": 3,
+    "guid": "627ed537-9276-46a8-86b3-fc250d0bdaf2",
+    "isActive": false,
+    "balance": "$2,328.52",
+    "picture": "male.png",
+    "age": 21,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Reynolds",
+      "last": "Green"
+    },
+    "company": "SPACEWAX",
+    "email": "reynolds.green@spacewax.io",
+    "phone": "+1 (945) 446-2398",
+    "address": "433 Brigham Street, Movico, Puerto Rico, 1670",
+    "about": "Id do nisi excepteur ad ut fugiat id proident Lorem. Fugiat ullamco cupidatat labore labore eu sit proident minim fugiat culpa aliqua. Nisi qui enim amet sint ipsum consequat est sunt aliquip aute labore ipsum proident aute.",
+    "registered": "Tuesday, January 19, 2016 7:49 PM",
+    "latitude": "43.59175",
+    "longitude": "150.734689",
+    "tags": [
+      "magna",
+      "amet",
+      "proident",
+      "incididunt",
+      "aute"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Keisha Golden"
+      },
+      {
+        "id": 1,
+        "name": "Norman Hobbs"
+      },
+      {
+        "id": 2,
+        "name": "Hollie Cardenas"
+      }
+    ],
+    "greeting": "Hello, Reynolds! You have 9 unread messages.",
+    "favoriteFruit": "banana"
+  }

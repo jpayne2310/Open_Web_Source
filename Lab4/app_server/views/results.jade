@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1=title
+    p   Name:    
+        strong #{name}
+    p   Email: 
+        strong #{email}
+    p   Comments:  
+        strong #{comments}
+    p
+        a(href="./form") Back

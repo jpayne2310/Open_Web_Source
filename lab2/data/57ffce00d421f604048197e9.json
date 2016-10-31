@@ -1,0 +1,57 @@
+ {
+    "_id": "57ffce00d421f604048197e9",
+    "index": 1,
+    "guid": "fb9f4ba9-9291-403a-8919-733944846297",
+    "isActive": true,
+    "balance": "$2,263.39",
+    "picture": "male.png",
+    "age": 30,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Simon",
+      "last": "Vincent"
+    },
+    "company": "AFFLUEX",
+    "email": "simon.vincent@affluex.biz",
+    "phone": "+1 (951) 573-2789",
+    "address": "973 Front Street, Norwood, Northern Mariana Islands, 5132",
+    "about": "Mollit et proident ullamco in minim cupidatat esse pariatur in. In do cillum mollit pariatur voluptate labore. Incididunt voluptate eu eu ut. Eiusmod laboris commodo enim laboris nulla duis nostrud mollit et aute voluptate ad pariatur aliqua. Ut eiusmod sunt minim ut reprehenderit id. Ex sit consequat quis aliquip dolor est est nisi sunt aliquip. Anim proident ea laboris exercitation sunt aliqua pariatur quis sint exercitation.",
+    "registered": "Monday, December 28, 2015 7:37 AM",
+    "latitude": "-41.960651",
+    "longitude": "118.210071",
+    "tags": [
+      "laboris",
+      "quis",
+      "aute",
+      "aute",
+      "nostrud"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Nicholson Riley"
+      },
+      {
+        "id": 1,
+        "name": "Alyce Nguyen"
+      },
+      {
+        "id": 2,
+        "name": "Abigail Vega"
+      }
+    ],
+    "greeting": "Hello, Simon! You have 5 unread messages.",
+    "favoriteFruit": "apple"
+  }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div class="info"></div>
+        
+        <script>
+             function makeRequest(url) {
+            
+                var promise = new Promise( httpPromise );
+                
+                function httpPromise(resolve, reject) {
+                    var httpRequest = new XMLHttpRequest();
+
+                     if ( !httpRequest ) {
+                       reject('Giving up :( Cannot create an XMLHTTP instance');
+                     }
+                     
+                     httpRequest.open('GET', url);
+                     httpRequest.send();
+                     
+                     httpRequest.addEventListener('load', httpResolve.bind(httpRequest));
+                     httpRequest.addEventListener('error', httpReject.bind(httpRequest));
+                     
+                     function httpResolve() {                        
+                        if ( this.status >= 200 && this.status < 300 ) {
+                            // Performs the function "resolve" when this.status is equal to 2xx
+                            resolve(JSON.parse(this.response));
+                        } else {
+                            // Performs the function "reject" when this.status is different than 2xx
+                            reject(this.statusText);
+                        }                          
+                     }                     
+                     function httpReject() {
+                         reject(this.statusText);
+                     }
+                }
+                // Return the promise
+                return promise;
+            }           
+             var callback = {
+              success: function(data) {
+                  displayList('div.info', data);                
+              },
+              error: function(data) {
+                console.log(2, 'error', data);
+              }
+              
+            };
+    
+    
+    makeRequest('todo').then(callback.success, callback.error);
+            
+             function displayList(selector, list) {
+                var dom = document.querySelector(selector);
+                var docfrag = document.createDocumentFragment();
+                
+                /* JavaScript now has built in foreach loops for arrays */
+                list.forEach(function(value) {
+                    /* you can use the creaeElement tag to create any HTML element you want */
+                    var li = document.createElement("ul");            
+                    li.textContent = 'Title: ' + value.title;
+                    /* you can set any attribute using the function below for any Created element */
+                    li.setAttribute('class', 'link');
+                    /*you can even attach events to the element */
+                    li.addEventListener('load', displayContent.bind(null, 'div.info', value));
+                    docfrag.appendChild(li);
+                });
+                
+                /* after the fragment is completed we can add it to the page */
+                dom.appendChild(docfrag);
+            }
+            function displayContent(selector, item) {
+                var dom = document.querySelector(selector);
+                var docfrag = document.createDocumentFragment();
+                
+                /* remove any child elements */
+                while (dom.firstChild) {
+                    dom.removeChild(dom.firstChild);
+                }   
+                
+
+                //docfrag.appendChild(createParagraphElement('Title: ', item.title) );
+                                
+                var completed = createParagraphElement('Completed: ', item.completed);
+                completed.setAttribute('class', 'link');
+                completed.addEventListener('click', function(){
+                     item.completed = !item.completed;
+                     displayContent(selector, item);
+                 });
+                 
+                docfrag.appendChild( completed );
+                dom.appendChild(docfrag);
+            }
+            function createParagraphElement(label, text) {
+                var pTag = document.createElement('p'),
+                    strongTag = document.createElement('strong'),
+                    strongText = document.createTextNode(label),
+                    pText = document.createTextNode(text);
+          
+                    strongTag.appendChild(strongText);
+                    pTag.appendChild(strongTag);  
+                    pTag.appendChild(pText);  
+                    return pTag;
+            }
+
+        </script>
+    </body>
+</html>
